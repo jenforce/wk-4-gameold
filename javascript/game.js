@@ -9,32 +9,22 @@ var userScore = 0;
 var oldScore = 0;
 var crystalmin = 1;
 var crystalmax =12;
-var targetScore = randomNumber(60,19);
-var crystalArray = [];
 var newNumber;
-
-
-var target = document.getElementById('targetScoreDisplay');
+var targetScore =  Math.floor(Math.random() * (50 - 19 + 1))+19;		
+		console.log(targetScore + "targetScore");
+		var target = document.getElementById('targetScoreDisplay');
                target.innerHTML = targetScore;
 
- var uScore = document.getElementById("userScoreDisplay");
-               target.innerHTML = userScore;              
-
-	function randomNumber (min,max) { 
-		return Math.floor(Math.random() * (max - min + 1))+min;
-		}
-		console.log(targetScore + "targetScore");
-
-	
+var crystalArray = [];	
 	
 	for(var i = 0; i < 4; i++){
-		var ranu = randomNumber(12,1); 
+		var ranu = Math.floor(Math.random() * (12 - 1 + 1))+1;; 
 		crystalArray.push(ranu); 
 		}
 		console.log(crystalArray);				
 
 $("#crystalclick1, #crystalclick2, #crystalclick3, #crystalclick4").on('click',function() {		
-			
+
 		if (userScore === targetScore){
 				winIt();
 			
@@ -47,27 +37,63 @@ $("#crystalclick1, #crystalclick2, #crystalclick3, #crystalclick4").on('click',f
 						newNumber = (crystalArray[0]);	
 						userScore = newNumber + oldScore;
 						oldScore = userScore;
-						return userScore;
-			}else if (event.target === crystalclick2){
+						console.log(userScore+"userscore");
+					    setScore(userScore);
+					   if (userScore === targetScore){
+								winIt();
+							}
+							else if (userScore > targetScore){
+							loseIt();
+							}
+					
+						
+		}else if (event.target === crystalclick2){
 						console.log(crystalArray[1]);
 						newNumber = (crystalArray[1]);	
 						userScore = newNumber + oldScore;
 						oldScore = userScore;
-						return userScore;
-			}else if (event.target === crystalclick3){
+						setScore(userScore);
+					if (userScore === targetScore){
+								winIt();
+							}
+							else if (userScore > targetScore){
+							loseIt();
+							}
+						
+		}else if (event.target === crystalclick3){
 						console.log(crystalArray[2]);
 						newNumber = (crystalArray[2]);	
 						userScore = newNumber + oldScore;
 						oldScore = userScore;
-						return userScore;
-			}else if (event.target === crystalclick4){
+						setScore(userScore);
+					if (userScore === targetScore){
+								winIt();
+							}
+							else if (userScore > targetScore){
+							loseIt();
+							}
+
+		}else if (event.target === crystalclick4){
 						console.log(crystalArray[3]);
 						newNumber = (crystalArray[3]);	
 						userScore = newNumber + oldScore;
 						oldScore = userScore;
-						return userScore;
-			}															
+						setScore(userScore);
+					if (userScore === targetScore){
+								winIt();
+							}
+							else if (userScore > targetScore){
+							loseIt();
+							}
+			}					
+			
+
 });	
+
+function setScore(userScore){
+	 uScore = document.getElementById("userScoreDisplay");
+               uScore.innerHTML = userScore; 
+           }
 				
 function winIt(){
 				win++;
