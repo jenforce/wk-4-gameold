@@ -5,37 +5,52 @@
 	margin:0 Auto;
 	font-family: "Ariel";
 	width: 800px;
-	border:solid gray;
 	height: 500px;
+}
+.container{
+	margin:0 Auto;
+	width: 800px;
 }
 
 .fnttxt{
 font-family: Arial, Times;
-
 }
 
 .header{
 background-color: black;
 }
-
+.winlose{
+	margin:40px;
+	padding: 10px 95px;
+	border: solid green;
+}
 
 .row{
 	font-family: Arial, Times;
-	height: 100px;
-
+	border:solid;
+	margin-top: 30px;
+	padding: 0px;
+}
+.border{
+	border:solid pink;
 }
 .footer{
-	width: 800px;
-	border:solid gray;
-	margin:0 Auto;
+	border:solid gray;	
+	margin-top: 5px
+	padding:40px;
 	height: 30px;
 	background-color: black;
 }
-.crystalbox1{
-	
+.crystalbox1{	
 	height: 100px;
 	width: 150px;
+	border: solid gray;
 	/*background-image: url("../images/a1.jpg"); */
+}
+
+.instruction{
+margin-top: 10px
+
 }
 
 .test{
