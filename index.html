@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>crystal</title>
+	<link crossorigin="anonymous" href=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity=
+	"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" rel=
+	"stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<script src="https://code.jquery.com/jquery-2.2.3.js">
+	</script>
+</head>
+<body>
+<div class="wrapper fnttxt"> 
+		<div class="header font"> 								<!--header start-->
+					<div>
+					
+					</div>			
+		</div>  											<!--header end-->
+
+						<!--main start-->
+<div class="row">
+	<div class="col-md-6"> 					
+					<div class="winlose">
+					<h2>WINS</h2> 
+					<div id="wins"></div>
+					</div>
+	</div> 		<!--row 1 container 1 end-->
+	<div class="col-md-6"> 						
+					<div class="winlose">
+					<h2>LOSSES</h2>
+					<div id="losses"></div>
+					</div>
+	</div> 		<!--row 1 container 1 end-->								
+</div> 					
+
+<div class="row">	<!--row 2  start-->
+		<div class="col-md-6">
+		<h3 class="font">Target Score:</h3>
+			<div id="targetScoreDisplay">
+			</div>
+		</div>
+		<div class="col-md-6">
+		<h3 class="font">Your Score:</h3>
+					<div id="userScoreDisplay">
+					</div>
+		</div> 
+</div>  
+
+<div class="row fnttxt"> 	
+		<div class="col-md-3">
+				<div class="crystalbox1">
+						<div id="crystalclick1">  <div> </div class="test"> CRYSTAL1     </div>
+				</div>	
+		</div>	
+		<div class="col-md-3">
+				<div class="crystalbox1">
+						<div id="crystalclick2">
+								CRYSTAL2
+						</div>
+				</div>
+		</div>
+		<div class="col-md-3">
+				<div class="crystalbox">
+						<div id="crystalclick3">
+							CRYSTAL3
+						</div>
+				</div>
+		</div> 					
+		<div class="col-md-3">
+				<div class="crystalbox">
+						<div id="crystalclick4">
+						CRYSTAL4
+						</div>
+				</div>
+		</div> 
+</div> 
+
+
+<div class="row">
+	<div class="col-md-12">
+						<div>
+						<p>You will be given a random number at the start of the game. On clicking one of the crystals a specific amount of points will be added to your score.  </p>
+						<p> You will win the game by matching your total score to the target score, you lose the game if your total score goes over the target score.
+						</p>
+						<p>The crystal value is kept hidding but can be revealed by click on the individual crystals.
+						For every new game the hidden point value for each crystal is reset to new values and the fun starts again. </p>
+
+						</div>
+	</div>
+</div>
+	
+</div> <!-- wrapper end-->
+		<div class="footer">							
+			<div>
+			</div>
+		</div>
+
+		<script src="javascript/game.js" type="text/javascript">
+		      $(document).ready(function() {
+
+		      });
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+
+
+.wrapper{
+	margin:0 Auto;
+	font-family: "Ariel";
+	width: 800px;
+	border:solid gray;
+	height: 500px;
+}
+
+.fnttxt{
+font-family: Arial, Times;
+
+}
+
+.header{
+background-color: black;
+}
+
+
+.row{
+	font-family: Arial, Times;
+	height: 100px;
+
+}
+.footer{
+	width: 800px;
+	border:solid gray;
+	margin:0 Auto;
+	height: 30px;
+	background-color: black;
+}
+.crystalbox1{
+	
+	height: 100px;
+	width: 150px;
+	/*background-image: url("../images/a1.jpg"); */
+}
+
+.test{
+	border:solid blue;
+	height: 100px;
+	width: 150px;
+}
