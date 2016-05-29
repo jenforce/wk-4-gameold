@@ -24,15 +24,8 @@ var crystalArray = [];
 		console.log(crystalArray);				
 
 $("#crystalclick1, #crystalclick2, #crystalclick3, #crystalclick4").on('click',function() {		
-
-		if (userScore === targetScore){
-				winIt();
-			
-			}else if ( userScore > targetScore){
-				loseIt();
-			
-
-			}else if (event.target === crystalclick1){
+		
+		 if (event.target === crystalclick1){
 						console.log(crystalArray[0]);
 						newNumber = (crystalArray[0]);	
 						userScore = newNumber + oldScore;
